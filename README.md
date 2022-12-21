@@ -1,12 +1,12 @@
 >**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
-### Date created
+* Date created
 21 dec 22
 
-### Project Title
+* Project Title
 Bikeshare Project in python
 
-### Description
+* Description
 Bike Share Data
 Over the past decade, bicycle-sharing systems have been growing in number and popularity in cities across the world. Bicycle-sharing systems allow users to rent bicycles on a very short-term basis for a price. This allows people to borrow a bike from point A and return it at point B, though they can also return it to the same location if they'd like to just go for a ride. Regardless, each bike can serve several users per day.
 
@@ -19,29 +19,29 @@ You will learn about bike share use in Chicago, New York City, and Washington by
 
 #1 Popular times of travel (i.e., occurs most often in the start time)
 
-most common month
-most common day of week
-most common hour of day
+-most common month
+-most common day of week
+-most common hour of day
 
 
 #2 Popular stations and trip
 
-most common start station
-most common end station
-most common trip from start to end (i.e., most frequent combination of start station and end station)
+-most common start station
+-most common end station
+-most common trip from start to end (i.e., most frequent combination of start station and end station)
 
 
 #3 Trip duration
 
-total travel time
-average travel time
+-total travel time
+-average travel time
 
 
 #4 User info
 
-counts of each user type
-counts of each gender (only available for NYC and Chicago)
-earliest, most recent, most common year of birth (only available for NYC and Chicago)
+-counts of each user type
+-counts of each gender (only available for NYC and Chicago)
+-earliest, most recent, most common year of birth (only available for NYC and Chicago)
 
 ### Files used
 This project need the three city dataset files:
@@ -49,7 +49,3 @@ This project need the three city dataset files:
 1- chicago.csv
 2- new_york_city.csv
 3- washington.csv
-
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
