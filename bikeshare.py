@@ -26,7 +26,7 @@ def get_filters():
         if CITY.lower() in ['chicago', 'new york city', 'washington']:
             break
         else:
-            print("invalid input. Please enter a valid input")
+            print("invalid input. Please choose from the following cities: chicago, new york city, washington")
 
     # TO DO: get user input for month (all, january, february, ... , june)
     MONTH = input('Enter the month: ').lower()
