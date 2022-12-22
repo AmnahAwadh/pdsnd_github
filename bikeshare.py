@@ -1,5 +1,6 @@
 '''
 Amnah Alsulami
+Programming for data scince nanodegree
 '''
 import time
 import pandas as pd
@@ -20,10 +21,12 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    CITY = input('Enter the city: ')
-    while CITY not in ['chicago', 'new york city', 'washington']:
-        CITY = input ("Choose one of the follwing cities: chicago, new york city OR washington. ").lower()
-
+    while True:
+        CITY = input("Which city would you like to explore ?")
+        if CITY.lower() in ['chicago', 'new york city', 'washington']:
+            break
+        else:
+            print("invalid input. Please enter a valid input")
 
     # TO DO: get user input for month (all, january, february, ... , june)
     MONTH = input('Enter the month: ').lower()
