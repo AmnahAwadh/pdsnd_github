@@ -1,5 +1,6 @@
 '''
 Amnah Alsulami
+Programming for data scince nanodegree
 '''
 import time
 import pandas as pd
@@ -20,10 +21,12 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    CITY = input('Enter the city: ')
-    while CITY not in ['chicago', 'new york city', 'washington']:
-        CITY = input ("Choose one of the follwing cities: chicago, new york city OR washington. ").lower()
-
+    while True:
+        CITY = input("Which city would you like to explore ?")
+        if CITY.lower() in ['chicago', 'new york city', 'washington']:
+            break
+        else:
+            print("invalid input. Please choose from the following cities: chicago, new york city, washington")
 
     # TO DO: get user input for month (all, january, february, ... , june)
     MONTH = input('Enter the month: ').lower()
@@ -178,6 +181,8 @@ def user_stats(df, city):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
+def display(df):
     
     i =1
     while True:
@@ -198,6 +203,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df, city)
+        display(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
